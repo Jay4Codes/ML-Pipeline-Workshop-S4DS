@@ -25,7 +25,7 @@ def predict():
     img = np.expand_dims(img, axis=0)
     result = model.predict(img)
     print(result)
-    return render_template('index.html', prediction=np.argmax(result), confidence = np.max(result)*100, path = '.' + image_path)
+    return render_template('index.html', prediction=np.argmax(result), confidence = round(np.max(result)*100, 2), path = '.' + image_path)
 
 if __name__ == '__main__':
     app.run(debug=True)

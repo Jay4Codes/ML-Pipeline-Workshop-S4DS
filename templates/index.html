@@ -15,8 +15,12 @@
         <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
     </form>
     {% if prediction %}
-        <p class="text-center"> The Digit in the Image is {{prediction}} with Confidence {{confidence}}%</p>
-        <image class='input-img' src="{{url_for('static',filename = 'images/input.png')}}" alt="image">
+        <div class="result">
+            <p class="text-center"> The Digit in the Image is {{prediction}} with Confidence {{confidence}}%</p>
+        </div>
+        <div class="result-img">
+            <image class='input-img' src="{{url_for('static',filename = 'images/input.png')}}" alt="image"></image>
+        </div>
     {% endif %}
 </body>
 </html>
