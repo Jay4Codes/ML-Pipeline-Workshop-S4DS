@@ -56,7 +56,7 @@ def predict():
 # debug=True hosts the web page in Debugging mode
 # In Debugging Mode the server reloads automatically if any changes are made in the code
 # You can also run the py file through cmd commands > set FLASK_APP=hello, > flask run 
-#Flask locally hosts the app on default port 5000
+# Flask locally hosts the app on default port 5000
 if __name__ == '__main__':
     app.run(debug=True)
     #app.run(host="localhost", port=8000, debug=True)
