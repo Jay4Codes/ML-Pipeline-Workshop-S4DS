@@ -17,3 +17,7 @@ h1 {
 .result-img .input-img {
     width: 12vw;
 }
+
+.result p {
+    font-size: 2em;
+}
