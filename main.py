@@ -8,7 +8,7 @@ from keras.preprocessing.image import img_to_array, load_img
 # Loading pre-trained model
 model = tf.keras.models.load_model('MNIST_ANN.h5')
 
-# Creating a instance that will be our WSGI - Web Server Gateway Interface
+# Creating an instance that will be our WSGI - Web Server Gateway Interface
 # WSGI is a specification that describes how a web server communicates with web applications, 
 # and how web applications can be chained together to process one request.
 # __name__ tells flask to look for resources in templates and static folder

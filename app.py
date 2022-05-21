@@ -7,12 +7,12 @@ def hello_world():
     return "<p>Hello, World!</p>"
     
 
-""" from flask import render_template
+from flask import render_template
 
 @app.route('/hello/')
 @app.route('/hello/<name>')
 def hello(name=None):
-    return render_template('hello.html', name=name) """
+    return render_template('hello.html', name=name)
 
 
 if __name__ == '__main__':
