@@ -28,6 +28,7 @@ def home():
 
 def predict():
     # requesting the image file
+    # name should match imagefile
     image_file = request.files['imagefile']
 
     # changing the filename to input.png
