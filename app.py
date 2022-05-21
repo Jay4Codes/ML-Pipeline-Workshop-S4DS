@@ -7,8 +7,6 @@ def hello_world():
     return "<p>Hello, World!</p>" """
     
 
-from flask import render_template
-
 @app.route('/')
 def hello():
     return render_template('hello.html')
